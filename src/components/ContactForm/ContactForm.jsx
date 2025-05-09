@@ -16,7 +16,6 @@ export default function ContactForm({ onSubmit }) {
 
   const handleSubmit = (values, actions) => {
     values = { ...values, id: crypto.randomUUID() };
-    console.log(values);
     onSubmit(values);
     actions.resetForm();
   };
